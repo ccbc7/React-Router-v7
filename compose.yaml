@@ -3,8 +3,7 @@ services:
     build:
       context: ./frontend/
       dockerfile: Dockerfile
-    volumes:
-      - ./frontend:/app
+      target: development
     ports:
       - 5173:5173
     stdin_open: true
